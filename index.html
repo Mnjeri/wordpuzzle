@@ -10,8 +10,17 @@
   </head>
   <body>
     <div class="container">
-      <h4>Word Puzzle!</h4>
-      <form id="wordpuzzleform">
+      <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="palindrome.html">Palindrome</a></li>
+          <li><a href="factorial.html">Factorial</a></li>
+          <li><a href="prime.html">Primes</a></li>
+        </ul>
+      <h2 class="header">Arrays & Looping</h2>
+    </header>
+        <h4>Word Puzzle!</h4>
+        <form id="wordpuzzleform">
         <div id="inputwords" class="form-group">
           <label for="textinput">Enter your words and see them Puzzled!!!!</label>
           <input id="textinput" class="form-control" type="text">
@@ -19,8 +28,10 @@
         <button type="submit" class="btn">Show/Hide Puzzle</button>
       </form>
       <div id="outputwords">
+        <div class="jumbotron wordpuzzle">
         <h2>Here is your puzzle:</h2>
         <p><span class="outputstring"></span></p>
+      </div>
       </div>
     </div>
   </body>

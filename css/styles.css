@@ -1,3 +1,7 @@
+body {
+  background: #e6f2ff
+}
+
 #inputwords{
   display: block;
 }
@@ -7,9 +11,11 @@
 #inputnumber{
   display: block;
 }
+
 #outputnumber{
   display: none;
 }
+
 #inputpalindrome{
   display: block;
 }
@@ -21,4 +27,60 @@
 }
 #outputprime{
   display: none;
+}
+
+.jumbotron.wordpuzzle {
+  margin-top: 20px;
+  background-image: url("../img/short-vowels.jpg");
+  background-position: 0% 30%;
+  background-size: cover;
+  color: white;
+  text-shadow:
+    1px 1px #000000,
+    -1px -1px #000000,
+    -1px 1px #000000,
+    1px -1px #000000;
+}
+
+.jumbotron.palindrome {
+  margin-top: 20px;
+  background-image: url("../img/banana.jpg");
+  background-position: 0% 50%;
+  background-size: cover;
+  color: white;
+  text-shadow:
+    1px 1px #000000,
+    -1px -1px #000000,
+    -1px 1px #000000,
+    1px -1px #000000;
+}
+
+.jumbotron.factorial {
+  margin-top: 20px;
+  background-image: url("../img/count.jpg");
+  background-position: 0% 20%;
+  background-size: cover;
+  color: white;
+  text-shadow:
+    1px 1px #000000,
+    -1px -1px #000000,
+    -1px 1px #000000,
+    1px -1px #000000;
+}
+
+.jumbotron.prime {
+  margin-top: 20px;
+  background-image: url("../img/prime.jpeg");
+  background-position: 0% 60%;
+  background-size: cover;
+  color: white;
+  text-shadow:
+    1px 1px #000000,
+    -1px -1px #000000,
+    -1px 1px #000000,
+    1px -1px #000000;
+}
+
+.header{
+  font-family: cursive;
 }

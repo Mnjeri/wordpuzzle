@@ -10,7 +10,16 @@
   </head>
   <body>
     <div class="container">
-      <h4>Factoral</h4>
+      <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="palindrome.html">Palindrome</a></li>
+          <li class="active"><a href="factorial.html">Factorial</a></li>
+          <li><a href="prime.html">Primes</a></li>
+        </ul>
+      <h2 class="header">Arrays & Looping</h2>
+      </header>
+      <h4>Factorial</h4>
       <form id="factorialform">
         <div id="inputnumber" class="form-group">
           <label for="numberinput">Enter the number you would like to compute the factorial of!!!!</label>
@@ -19,8 +28,10 @@
         <button type="submit" class="btn">Show/Hide Factorial</button>
       </form>
       <div id="outputnumber">
-        <h2>Here is your factorial:</h2>
-        <p><span class="outputfactorial"></span></p>
+        <div class="jumbotron factorial">
+          <h2>Here is your factorial:</h2>
+          <p><span class="outputfactorial"></span></p>
+        </div>
       </div>
     </div>
   </body>

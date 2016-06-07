@@ -28,7 +28,7 @@ var factorial = function(num){
 
   $("form#factorialform").submit(function(event){
       var numberinput=parseInt($("input#numberinput").val());
-      total = factorial(numberinput);
+      var total = factorial(numberinput);
       // var total=1;
       // for(var index=1; index<=numberinput; index+=1){
       //   total *=index;

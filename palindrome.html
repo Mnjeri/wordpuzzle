@@ -10,6 +10,15 @@
   </head>
   <body>
     <div class="container">
+      <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="palindrome.html">Palindrome</a></li>
+          <li><a href="factorial.html">Factorial</a></li>
+          <li><a href="prime.html">Primes</a></li>
+        </ul>
+      <h2 class="header">Arrays & Looping</h2>
+      </header>
       <h4>Palindrome</h4>
       <form id="palindromeform">
         <div id="inputpalindrome" class="form-group">
@@ -19,8 +28,10 @@
         <button type="submit" class="btn">Show/Hide Palindrome</button>
       </form>
       <div id="outputpalindrome">
-        <h2>Here is your answer:</h2>
-        <p>The phrase you provided is <span class="notapalindrome"></span>a palindrome</p>
+        <div class="jumbotron palindrome">
+          <h2>Here is your answer:</h2>
+          <p>The phrase you provided is <span class="notapalindrome"></span>a palindrome</p>
+        </div>
       </div>
     </div>
   </body>

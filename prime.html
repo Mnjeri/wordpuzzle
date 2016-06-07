@@ -10,6 +10,15 @@
   </head>
   <body>
     <div class="container">
+      <header class="page-header">
+        <ul class="nav nav-tabs pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="palindrome.html">Palindrome</a></li>
+          <li><a href="factorial.html">Factorial</a></li>
+          <li class="active"><a href="prime.html">Primes</a></li>
+        </ul>
+      <h2 class="header">Arrays & Looping</h2>
+      </header>
       <h4>Prime</h4>
       <form id="primeform">
         <div id="inputprime" class="form-group">
@@ -19,9 +28,11 @@
         <button type="submit" class="btn">Show/Hide Prime Numbers</button>
       </form>
       <div id="outputprime">
-        <h2>Here are the primes:</h2>
-        <ul id="listofprimes">
-        </ul>
+        <div class="jumbotron prime">
+          <h2>Here are the primes:</h2>
+          <ul id="listofprimes">
+          </ul>
+        </div>
       </div>
     </div>
   </body>
