@@ -62,5 +62,14 @@ $(document).ready(function(){
     $("#outputpalindrome").toggle();
     event.preventDefault();
   });
-
+  $("form#primeform").submit(function(event){
+    var primeinput=parseInt($("input#primeinput").val());
+    var primelist=[];
+    for(var index=2; index<=primeinput; index+=1){
+      primelist.push(index);
+    };
+    debugger;
+    
+    event.preventDefault();
+  });
 });
