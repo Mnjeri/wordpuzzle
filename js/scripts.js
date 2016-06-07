@@ -9,6 +9,10 @@ var factorial = function(num){
   }
 };
 
+var isPunctuation = function(char) {
+  return char!=" " && char!="," && char!="." && char!="!" && char!="?" && char!=";" && char!="'" ;
+};
+
   $("form#wordpuzzleform").submit(function(event) {
     var stringinput=$("input#textinput").val();
     var inputletters=stringinput.split("");
@@ -49,18 +53,20 @@ var factorial = function(num){
   $("form#palindromeform").submit(function(event){
     var palindrome=$("input#palindromeinput").val();
     var capitalizedinput=palindrome.toUpperCase();
-    var nospaces = capitalizedinput.split(" ");
-    var nospacestring = nospaces.join("");
-    var palindromearray = nospacestring.split("");
+    // var nospaces = capitalizedinput.split(" ");
+    // var nospacestring = nospaces.join("");
+    var palindromearray = capitalizedinput.split("");
+    var filteredarray = palindromearray.filter(isPunctuation);
+    console.log(filteredarray)
     var palindromearrayreversed = [];
-    for(index=(palindromearray.length)-1; index>=0; index-=1){
-      palindromearrayreversed.push(palindromearray[index]);
+    for(index=(filteredarray.length)-1; index>=0; index-=1){
+      palindromearrayreversed.push(filteredarray[index]);
     };
-    console.log(palindromearray);
+    console.log(filteredarray);
     console.log(palindromearrayreversed);
     var pal = true;
-    for(var index=0; index<palindromearray.length; index+=1){
-      if(palindromearray[index]!= palindromearrayreversed[index]){
+    for(var index=0; index<filteredarray.length; index+=1){
+      if(filteredarray[index]!= palindromearrayreversed[index]){
         var pal = false;
       }
     };

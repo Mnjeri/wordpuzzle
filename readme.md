@@ -17,7 +17,7 @@ _Create a website that uses a method to replace vowels in a string with the dash
 
 ## Known Bugs
 
-_No know bugs at this point_
+_Inputs currently need to be the correct type._
 
 ## Support and contact details
 
@@ -25,7 +25,7 @@ _Please contact us for questions_
 
 ## Technologies Used
 
-_HTML, CSS, JavaScript_
+_HTML, CSS, JavaScript, Bootstrap_
 
 ### License
 
