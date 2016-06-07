@@ -63,13 +63,25 @@ $(document).ready(function(){
     event.preventDefault();
   });
   $("form#primeform").submit(function(event){
+    $("ul#listofprimes li").remove();
     var primeinput=parseInt($("input#primeinput").val());
     var primelist=[];
     for(var index=2; index<=primeinput; index+=1){
       primelist.push(index);
     };
-    debugger;
-    
+
+    for(var prime=2; prime<=primeinput/2; prime+=1){
+      for(var index=2*prime; index<=primeinput; index+=prime){
+        primelist[index-2]="-";
+      };
+    };
+    $("#inputprime").toggle();
+    $("#outputprime").toggle();
+    primelist.forEach(function(potentialPrime){
+      if(potentialPrime != "-"){
+        $("#listofprimes").append("<li>"+potentialPrime+"</li>");
+      }
+    });
     event.preventDefault();
   });
 });

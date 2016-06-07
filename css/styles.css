@@ -16,3 +16,9 @@
 #outputpalindrome{
   display: none;
 }
+#inputprime{
+  display: block;
+}
+#outputprime{
+  display: none;
+}
