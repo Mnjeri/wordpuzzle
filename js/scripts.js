@@ -15,4 +15,19 @@ $(document).ready(function(){
     $("#outputwords").toggle();
     event.preventDefault();
   });
+
+  $("form#factorialform").submit(function(event){
+      var numberinput=parseInt($("input#numberinput").val());
+      var numbers=[];
+      for(var index=numberinput; index>0; index-=1){
+      numbers.push(index);
+      }
+      var total = numbers.reduce(function(a,b){
+        return a*b;
+      });
+      $("#inputnumber").toggle();
+      $("#outputnumber").toggle();
+      $(".outputfactorial").text(total)
+      event.preventDefault();
+  });
 });

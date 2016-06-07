@@ -4,3 +4,9 @@
 #outputwords{
   display: none;
 }
+#inputnumber{
+  display: block;
+}
+#outputnumber{
+  display: none;
+}
