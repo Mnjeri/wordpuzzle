@@ -11,6 +11,8 @@ $(document).ready(function(){
     var puzzlestring = inputletters.join("");
     console.log(puzzlestring)
     $(".outputstring").text(puzzlestring)
+    $("#inputwords").toggle();
+    $("#outputwords").toggle();
     event.preventDefault();
   });
 });
