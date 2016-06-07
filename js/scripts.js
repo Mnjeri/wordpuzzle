@@ -1,4 +1,14 @@
+
 $(document).ready(function(){
+
+var factorial = function(num){
+  if(num>0){
+    return num*factorial(num-1);
+  } else {
+    return 1;
+  }
+};
+
   $("form#wordpuzzleform").submit(function(event) {
     var stringinput=$("input#textinput").val();
     var inputletters=stringinput.split("");
@@ -18,10 +28,11 @@ $(document).ready(function(){
 
   $("form#factorialform").submit(function(event){
       var numberinput=parseInt($("input#numberinput").val());
-      var total=1;
-      for(var index=1; index<=numberinput; index+=1){
-        total *=index;
-      }
+      total = factorial(numberinput);
+      // var total=1;
+      // for(var index=1; index<=numberinput; index+=1){
+      //   total *=index;
+      // }
       // var numbers=[];
       // for(var index=numberinput; index>0; index-=1){
       // numbers.push(index);
