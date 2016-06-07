@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Palindrome</title>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Palindrome</h4>
+      <form id="palindromeform">
+        <div id="inputpalindrome" class="form-group">
+          <label for="palindromeinput">Is your word a Palindrome?</label>
+          <input id="palindromeinput" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Show/Hide Palindrome</button>
+      </form>
+      <div id="outputpalindrome">
+        <h2>Here is your answer:</h2>
+        <p>The phrase you provided is <span class="notapalindrome"></span>a palindrome</p>
+      </div>
+    </div>
+  </body>
+</html>

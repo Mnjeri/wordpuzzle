@@ -34,4 +34,31 @@ $(document).ready(function(){
       $(".outputfactorial").text(total)
       event.preventDefault();
   });
+
+  $("form#palindromeform").submit(function(event){
+    var palindrome=$("input#palindromeinput").val();
+    var capitalizedinput=palindrome.toUpperCase();
+    var palindromearray = capitalizedinput.split("");
+    var palindromearrayreversed = [];
+    for(index=(palindromearray.length)-1; index>=0; index-=1){
+      palindromearrayreversed.push(palindromearray[index]);
+    };
+    console.log(palindromearray);
+    console.log(palindromearrayreversed);
+    var pal = true;
+    for(var index=0; index<palindromearray.length; index+=1){
+      if(palindromearray[index]!= palindromearrayreversed[index]){
+        var pal = false;
+      }
+    };
+    if(pal === false){
+      $(".notapalindrome").text("not ");
+    } else {
+      $(".notapalindrome").text("");
+    };
+    $("#inputpalindrome").toggle();
+    $("#outputpalindrome").toggle();
+    event.preventDefault();
+  });
+
 });

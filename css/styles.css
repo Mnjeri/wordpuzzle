@@ -10,3 +10,9 @@
 #outputnumber{
   display: none;
 }
+#inputpalindrome{
+  display: block;
+}
+#outputpalindrome{
+  display: none;
+}
