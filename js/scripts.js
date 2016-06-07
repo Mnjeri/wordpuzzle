@@ -38,7 +38,9 @@ $(document).ready(function(){
   $("form#palindromeform").submit(function(event){
     var palindrome=$("input#palindromeinput").val();
     var capitalizedinput=palindrome.toUpperCase();
-    var palindromearray = capitalizedinput.split("");
+    var nospaces = capitalizedinput.split(" ");
+    var nospacestring = nospaces.join("");
+    var palindromearray = nospacestring.split("");
     var palindromearrayreversed = [];
     for(index=(palindromearray.length)-1; index>=0; index-=1){
       palindromearrayreversed.push(palindromearray[index]);
