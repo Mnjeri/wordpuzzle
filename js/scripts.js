@@ -92,6 +92,7 @@ var isPunctuation = function(char) {
         primelist[index-2]="-";
       };
     };
+    console.log(primelist)
     $("#inputprime").toggle();
     $("#outputprime").toggle();
     primelist.forEach(function(potentialPrime){
